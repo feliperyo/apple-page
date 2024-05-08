@@ -103,6 +103,10 @@ main {
     background-color: #B50012;
 }
 
+#purple {
+    background-color: #b971f0;
+}
+
 .circulo {
     position: absolute;
     top: 0;
@@ -136,5 +140,134 @@ main {
 
     100% {
         clip-path: circle(700px at right 900px);
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    main {
+        flex-direction: column;
+    }
+
+    .cell-img {
+        width: 400px;
+    }
+
+    .colors {
+        justify-content: center;
+    }
+
+    .circulo {
+        clip-path: circle(700px at right 1100px);
+    }
+
+    @keyframes cell-appear {
+        from {
+            width: 50px;
+        }
+
+        to {
+            width: 400px;
+        }
+    }
+
+    @keyframes circle-appear {
+        0% {
+            clip-path: circle(0%);
+        }
+
+        40% {
+            clip-path: circle(900px at right 900px);
+        }
+
+        100% {
+            clip-path: circle(700px at right 1100px);
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    main {
+        padding: 25px;
+        text-align: center;
+    }
+
+    .cell-img {
+        width: 220px;
+    }
+
+    .main-div h2 {
+        font-size: 20px;
+    }
+
+    .main-div h3 {
+        font-size: 25px;
+    }
+
+    .main-div h6 {
+        font-size: 14px;
+    }
+
+    .circulo {
+        clip-path: circle(500px at right 1000px);
+    }
+
+    @keyframes cell-appear {
+        from {
+            width: 50px;
+        }
+
+        to {
+            width: 220px;
+        }
+    }
+
+    @keyframes circle-appear {
+        0% {
+            clip-path: circle(0%);
+        }
+
+        40% {
+            clip-path: circle(900px at right 900px);
+        }
+
+        100% {
+            clip-path: circle(500px at right 1000px);
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .cell-img {
+        width: 200px;
+    }
+
+    .circulo {
+        clip-path: circle(500px at right 900px);
+    }
+
+    @keyframes cell-appear {
+        from {
+            width: 50px;
+        }
+
+        to {
+            width: 200px;
+        }
+    }
+
+    @keyframes circle-appear {
+        0% {
+            clip-path: circle(0%);
+        }
+
+        40% {
+            clip-path: circle(900px at right 900px);
+        }
+
+        100% {
+            clip-path: circle(500px at right 900px);
+        }
     }
 }
