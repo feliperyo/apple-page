@@ -17,8 +17,25 @@
 </head>
 
 <body>
+
+    <header>
+
+        <img src="./assets/logo.png" alt="logo">
+
+        <a>Mac</a>
+        <a href="./index.html">iPhone</a>
+        <a>iPad</a>
+        <a>Watch</a>
+        <a>AirPods</a>
+        <a>Acessórios</a>
+        <a>Suporte</a>
+
+    </header>
+
     <main>
+
         <div class="circulo"></div>
+
         <div class="main-div">
             <h2>iPhone 16</h2>
             <h3>Tão poderoso.
@@ -32,16 +49,21 @@
             <h5>Escolha sua cor:</h5>
 
             <div class="colors">
-                <span id="blue"></span>
-                <span id="yellow"></span>
-                <span id="white"></span>
-                <span id="black"></span>
-                <span id="red"></span>
-                <span id="purple"></span>
+                <span onclick="changeColor('#81A5C4'); changeImg('./assets/blue-cell.png')" id="blue"></span>
+                <span onclick="changeColor('#F7DA47'); changeImg('./assets/yellow-cell.png')" id="yellow"></span>
+                <span onclick="changeColor('#C1C1C1'); changeImg('./assets/white-cell.png')" id="white"></span>
+                <span onclick="changeColor('#272D33'); changeImg('./assets/black-cell.png')" id="black"></span>
+                <span onclick="changeColor('#B50012'); changeImg('./assets/red-cell.png')" id="red"></span>
+                <span onclick="changeColor('#EDE7F1'); changeImg('./assets/purple-cell.png')" id="purple"></span>
             </div>
+
         </div>
+
         <img src="./assets/blue-cell.png" class="cell-img" alt="Imagem do Celular" id="phone">
+
     </main>
 </body>
+
+<script src="./scripts.js"></script>
 
 </html>

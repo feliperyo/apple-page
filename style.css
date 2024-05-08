@@ -8,7 +8,39 @@
 body {
     width: 100vw;
     min-height: 100vh;
-    overflow-x: hidden;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding: 20px;
+    align-items: center;
+}
+
+header img {
+    width: 20px;
+}
+
+header a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #9f9e9e;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+header a:hover {
+    color: #575757;
+}
+
+header a:visited {
+    color: #9f9e9e;
+}
+
+header a:visited:hover {
+    color: #575757;
 }
 
 main {
@@ -104,7 +136,7 @@ main {
 }
 
 #purple {
-    background-color: #b971f0;
+    background-color: #EDE7F1;
 }
 
 .circulo {
@@ -144,6 +176,11 @@ main {
 }
 
 @media screen and (max-width: 1030px) {
+
+    header {
+        display: none;
+    }
+
     main {
         flex-direction: column;
     }
